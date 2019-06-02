@@ -1,25 +1,27 @@
-<h2>minhas tarefas</h2>
+<h2>Minhas tarefas</h2>
+<button class="dash" routerLink='/dashboard'>Ir para dashboard</button>
 <ul class="tarefa">
 <li *ngFor="let tar of tarefas" [class.selected]="hero === selectedTarefa" (click)="onSelectTarefa(tar)">
-      <span class="badges">
+      <span class="badge">
         Nome: {{tar.nome}}
+        </span>
         Descrição: {{tar.descr}}
         Percentual: {{tar.perc}} 
-        </span>
+        
 </li>
 </ul>
 
 <div *ngIf="selectedTarefa">
 <h2> {{selectedTarefa.nome | uppercase}} Detalhe</h2>
     <div>
-        <label>name:
+        <label>Nome:
         <input [(ngModel)]="selectedTarefa.nome"
         placeholder="name"/>
-        </label>
+        </label><br>
         <label>Descrição:
         <input [(ngModel)]="selectedTarefa.descr"
         placeholder="descricao"/>
-        </label>
+        </label><br>
         <label>Percentual:
         <input [(ngModel)]="selectedTarefa.perc"
         placeholder="percentual"/>
