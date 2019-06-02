@@ -6,7 +6,7 @@ import { ExibirListagemComponent } from './exibir-listagem/exibir-listagem.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', component: ExibirListagemComponent },
+  { path: 'listagem', component: ExibirListagemComponent },
   { path: 'dashboard', component: DashboardComponent },
   {path: 'detail/:id', component: DetailTarefaComponent},
 ];
