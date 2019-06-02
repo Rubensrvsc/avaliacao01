@@ -25,7 +25,7 @@ export class DetailTarefaComponent implements OnInit {
 
   getTarefa(): void {
     const id = +this.route.snapshot.paramMap.get('perc');
-    this.serviceTarefa.getTarefaDeatil(id)
+    this.serviceTarefa.getTarefaDetail(id)
       .subscribe(tarefa => this.tarefa = tarefa);
   }
 
