@@ -2,6 +2,7 @@
 .dash{
     background-color: aqua;
 }
+
 .selected {
     background-color: #CFD8DC !important;
     color: black;

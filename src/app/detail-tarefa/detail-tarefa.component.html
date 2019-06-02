@@ -1,0 +1,10 @@
+<div *ngIf="tarefa">
+  <h2>{{tarefa.nome | uppercase}} Details</h2>
+  <div><span>Percentual: </span>{{tarefa.perc}}</div>
+  <div>
+    <label>Nome:
+      <input [(ngModel)]="tarefa.descr" placeholder="name"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

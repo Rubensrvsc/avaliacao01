@@ -1,7 +1,7 @@
 
 <h3>Nome usuários</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let tar of tarefas" class="col-1-4">
+<div class="grid grid-pad" >
+  <a *ngFor="let tar of tarefas" class="col-1-4" routerLink="/detail/{{tar.perc}}">
     <div class="module hero">
       <h4>{{tar.nome | uppercase}}</h4>
     </div>

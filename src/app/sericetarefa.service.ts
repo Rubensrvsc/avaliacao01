@@ -15,4 +15,8 @@ export class SericetarefaService {
     return of(TAREFA)
   }
 
+  getTarefaDeatil(id: number): Observable<Tarefa>{
+    return of(TAREFA.find(tarefa => tarefa.perc === id));
+  }
+
 }
