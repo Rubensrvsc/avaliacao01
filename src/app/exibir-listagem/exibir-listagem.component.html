@@ -1,0 +1,28 @@
+<h2>minhas tarefas</h2>
+<ul class="tarefa">
+<li *ngFor="let tar of tarefas" [class.selected]="hero === selectedTarefa" (click)="onSelectTarefa(tar)">
+      <span class="badges">
+        Nome: {{tar.nome}}
+        Descrição: {{tar.descr}}
+        Percentual: {{tar.perc}} 
+        </span>
+</li>
+</ul>
+
+<div *ngIf="selectedTarefa">
+<h2> {{selectedTarefa.nome | uppercase}} Detalhe</h2>
+    <div>
+        <label>name:
+        <input [(ngModel)]="selectedTarefa.nome"
+        placeholder="name"/>
+        </label>
+        <label>Descrição:
+        <input [(ngModel)]="selectedTarefa.descr"
+        placeholder="descricao"/>
+        </label>
+        <label>Percentual:
+        <input [(ngModel)]="selectedTarefa.perc"
+        placeholder="percentual"/>
+        </label>
+    </div>
+</div>

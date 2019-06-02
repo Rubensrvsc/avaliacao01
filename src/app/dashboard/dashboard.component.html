@@ -1,0 +1,16 @@
+
+<h3>Top Heroes</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let tar of tarefas" class="col-1-4">
+    <div class="module hero">
+      <h4>{{tar.nome | uppercase}}</h4>
+    </div>
+  </a>
+</div>
+<div class="grid grid-pad">
+  <a routerLink='' class="col-1-4">
+    <div class="module hero">
+      <h4>Ir para listagem</h4>
+    </div>
+  </a>
+</div>
